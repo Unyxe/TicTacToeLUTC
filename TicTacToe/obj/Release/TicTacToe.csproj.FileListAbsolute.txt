@@ -1,0 +1,11 @@
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe.config
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\bin\Release\TicTacToe.exe
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\bin\Release\TicTacToe.pdb
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.AssemblyReference.cache
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.SuggestedBindingRedirects.cache
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.Form1.resources
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.Properties.Resources.resources
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.GenerateResource.cache
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.csproj.CoreCompileInputs.cache
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.exe
+\\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Release\TicTacToe.pdb
