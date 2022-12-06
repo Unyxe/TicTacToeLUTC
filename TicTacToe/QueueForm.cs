@@ -24,6 +24,8 @@ namespace TicTacToe
         public static bool in_queue = true;
         public static bool synch = false;
         public static List<string> queue_ids = new List<string>();
+        public static GameForm game;
+        public static QueueForm main_form;
         
         
         public QueueForm()
@@ -38,6 +40,7 @@ namespace TicTacToe
             Random rnd = new Random();
             app_id = CreateMD5(rnd.Next().ToString());
             app_id_lbl.Text = app_id;
+            main_form = this;
 
             var main_users_thread = new Thread(() =>
             {
@@ -56,6 +59,13 @@ namespace TicTacToe
                         if (TargetFolderPath == "")
                         {
                             Thread.Sleep(2000);
+                            if(enter_queue_btn.Text != "Queue")
+                            {
+                                Invoke((MethodInvoker)(() => 
+                                {
+                                    enter_queue_btn.Text = "Queue";
+                                }));
+                            }
                             continue;
                         }
                         queue_ids.Clear();
@@ -86,9 +96,14 @@ namespace TicTacToe
                             {
                                 opponent_id_lbl.Text = oppenent_id;
                             }));
-                            Console.WriteLine("LEaved");
+                            //Console.WriteLine("LEaved");
                             queue_ids.Clear();
                             oppenent_id = "";
+                            this.Invoke((MethodInvoker)(() =>
+                            {
+                                this.Show();
+                                game.Close();
+                            }));
                             continue;
                         }
                         if (in_queue) { 
@@ -101,7 +116,7 @@ namespace TicTacToe
                                 //Console.WriteLine(file.Name + "\n");
                             }
                             queue_ids.Sort();
-                            Console.WriteLine("\n\n\n");
+                            //Console.WriteLine("\n\n\n");
                             foreach(string id in queue_ids)
                             {
                                 if (id == app_id)
@@ -109,13 +124,15 @@ namespace TicTacToe
                                     ind = c;
                                 }
                                 c++;
-                                Console.WriteLine(id + "\n");
+                                //Console.WriteLine(id + "\n");
                             }
-                            Console.WriteLine("\n\n\n");
+                            //Console.WriteLine("\n\n\n");
+                            bool pl1 = false;
                             if (ind % 2 == 0 && queue_ids.Count > 1)
                             {
                                 if (ind + 1 != queue_ids.Count)
                                 {
+                                    pl1 = true;
                                     oppenent_id = queue_ids[ind + 1];
                                 }
                             } else if(queue_ids.Count > 1)
@@ -138,8 +155,15 @@ namespace TicTacToe
                                 {
                                     Directory.CreateDirectory(TargetFolderPath);
                                 }
-                                Console.WriteLine("Found");
+                                //Console.WriteLine("Found");
                                 in_queue = false;
+                                game = new GameForm(TargetFolderPath, app_id, oppenent_id, pl1);
+                                this.Invoke((MethodInvoker)(() => 
+                                {
+                                    this.Hide();
+                                    game.Show();
+                                }));
+                                
                             }
                             continue;
                         }
@@ -177,6 +201,10 @@ namespace TicTacToe
                 hash.Append(bytes[i].ToString("x2"));
             }
             return hash.ToString();
+        }
+        public static void Sho()
+        {
+            main_form.Show();
         }
 
         private void enter_queue_btn_Click(object sender, EventArgs e)

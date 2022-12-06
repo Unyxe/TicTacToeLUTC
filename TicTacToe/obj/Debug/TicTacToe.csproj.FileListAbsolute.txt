@@ -19,3 +19,15 @@ C:\Users\TPerfilov\source\repos\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
 \\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojAssemblyReference.cache
 \\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Debug\TicTacToe.GameForm.resources
 \\lutcfs01.lutc.internal\student$\TPerfilov\Documents\TicTacToe\TicTacToe\obj\Debug\TicTacToe.QueueForm.resources
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.csproj.SuggestedBindingRedirects.cache
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.GameForm.resources
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.QueueForm.resources
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\lucky\source\repos\TicTacToeLUTC-main\TicTacToe\obj\Debug\TicTacToe.pdb

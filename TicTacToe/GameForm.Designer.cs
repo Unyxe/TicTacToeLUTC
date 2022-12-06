@@ -37,10 +37,12 @@
             this.g7_btn = new System.Windows.Forms.Button();
             this.g8_btn = new System.Windows.Forms.Button();
             this.g9_btn = new System.Windows.Forms.Button();
+            this.turn_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // g1_btn
             // 
+            this.g1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g1_btn.Location = new System.Drawing.Point(161, 95);
             this.g1_btn.Name = "g1_btn";
             this.g1_btn.Size = new System.Drawing.Size(80, 80);
@@ -50,6 +52,7 @@
             // 
             // g2_btn
             // 
+            this.g2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g2_btn.Location = new System.Drawing.Point(247, 95);
             this.g2_btn.Name = "g2_btn";
             this.g2_btn.Size = new System.Drawing.Size(80, 80);
@@ -59,6 +62,7 @@
             // 
             // g3_btn
             // 
+            this.g3_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g3_btn.Location = new System.Drawing.Point(333, 95);
             this.g3_btn.Name = "g3_btn";
             this.g3_btn.Size = new System.Drawing.Size(80, 80);
@@ -68,6 +72,7 @@
             // 
             // g4_btn
             // 
+            this.g4_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g4_btn.Location = new System.Drawing.Point(161, 181);
             this.g4_btn.Name = "g4_btn";
             this.g4_btn.Size = new System.Drawing.Size(80, 80);
@@ -77,6 +82,7 @@
             // 
             // g5_btn
             // 
+            this.g5_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g5_btn.Location = new System.Drawing.Point(247, 181);
             this.g5_btn.Name = "g5_btn";
             this.g5_btn.Size = new System.Drawing.Size(80, 80);
@@ -86,6 +92,7 @@
             // 
             // g6_btn
             // 
+            this.g6_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g6_btn.Location = new System.Drawing.Point(333, 181);
             this.g6_btn.Name = "g6_btn";
             this.g6_btn.Size = new System.Drawing.Size(80, 80);
@@ -95,6 +102,7 @@
             // 
             // g7_btn
             // 
+            this.g7_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g7_btn.Location = new System.Drawing.Point(161, 267);
             this.g7_btn.Name = "g7_btn";
             this.g7_btn.Size = new System.Drawing.Size(80, 80);
@@ -104,6 +112,7 @@
             // 
             // g8_btn
             // 
+            this.g8_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g8_btn.Location = new System.Drawing.Point(247, 267);
             this.g8_btn.Name = "g8_btn";
             this.g8_btn.Size = new System.Drawing.Size(80, 80);
@@ -113,6 +122,7 @@
             // 
             // g9_btn
             // 
+            this.g9_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.g9_btn.Location = new System.Drawing.Point(333, 267);
             this.g9_btn.Name = "g9_btn";
             this.g9_btn.Size = new System.Drawing.Size(80, 80);
@@ -120,11 +130,21 @@
             this.g9_btn.UseVisualStyleBackColor = true;
             this.g9_btn.Click += new System.EventHandler(this.g9_btn_Click);
             // 
+            // turn_lbl
+            // 
+            this.turn_lbl.AutoSize = true;
+            this.turn_lbl.Location = new System.Drawing.Point(268, 50);
+            this.turn_lbl.Name = "turn_lbl";
+            this.turn_lbl.Size = new System.Drawing.Size(35, 13);
+            this.turn_lbl.TabIndex = 9;
+            this.turn_lbl.Text = "label1";
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
+            this.Controls.Add(this.turn_lbl);
             this.Controls.Add(this.g9_btn);
             this.Controls.Add(this.g8_btn);
             this.Controls.Add(this.g7_btn);
@@ -136,7 +156,9 @@
             this.Controls.Add(this.g1_btn);
             this.Name = "GameForm";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameForm_FormClosing);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -151,5 +173,6 @@
         private System.Windows.Forms.Button g7_btn;
         private System.Windows.Forms.Button g8_btn;
         private System.Windows.Forms.Button g9_btn;
+        private System.Windows.Forms.Label turn_lbl;
     }
 }
